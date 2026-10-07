@@ -1,0 +1,137 @@
+:root {
+  --primary: #087e8b;
+  --primary-hover: #06636d;
+  --danger: #c44536;
+  --danger-hover: #a9362a;
+  --warning: #d28b16;
+  --success: #27864a;
+  --background: #eef5f4;
+  --surface: #ffffff;
+  --text: #203443;
+  --border: #d4e2e2;
+  --nav: #14545b;
+  --nav-accent: #f3b544;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.navbar {
+  background-color: var(--nav);
+  border-bottom: 4px solid var(--nav-accent);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.navbar h2 {
+  color: white;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #e6f3f1;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  color: var(--nav-accent);
+  border-bottom: 2px solid var(--nav-accent);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-top: 3px solid #43a6a0;
+  box-shadow: 0 2px 8px rgba(20, 84, 91, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.card h3 {
+  color: var(--nav);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-control:focus {
+  outline: 2px solid #79c7bd;
+  border-color: var(--primary);
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-primary { background: var(--primary); color: white; }
+.btn-primary:hover { background: var(--primary-hover); }
+.btn-danger { background: var(--danger); color: white; }
+.btn-danger:hover { background: var(--danger-hover); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  background: #e5f1ef;
+  color: #14545b;
+}
+
+tbody tr:hover {
+  background: #f2f8f6;
+}
+
+.low-stock {
+  background-color: #fce8e4;
+  color: #a9362a;
+  font-weight: bold;
+}
+
+.badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+.badge-warning { background: #fff1cc; color: #8a5a00; }
